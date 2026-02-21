@@ -12,6 +12,6 @@ metric for quantifying when two shapes are similar.
 Sadly, in high-dimensions, it is rather expensive to compute.
 
 
-This approach applies it to 1D time-series. For the 1D computation is very cheap.
+This approach applies it to 1D time-series. For the 1D case computation is very cheap.
 In fact, an approach for multi-dim. Wasserstein distance computation uses the Radon transform (a method used often in tomography) to project the distribution onto 1D slices
 ( see sliced Wasserstein distance)
