@@ -5,8 +5,8 @@ Considers each window as a 1D distribution, represented by the histogram of perc
 i.e. (-10%, -5%, 0%, 5%, 10%). 
 Similar distributions go to the same cluster with similarity/geometry defined by the wasserstein distance/metric.
 
-I got interested in the Wasserstein distance while working on a VAE for Shapes, represented as Signed Distance functions.
-Turns out the MSE and proportional distances have some disadvantages when working with few shapes. 
+I got interested in the Wasserstein distance while working on a VAE for shapes, represented as Signed Distance functions.
+Turns out the MSE and proportional distances have some disadvantages when working with few shapes (image the the (bary)center between a mu1 centered gaussian to a mu2 centered gaussian ).
 The Wasserstein distance, based on optimal (mass) transport, would be a much nicer
 metric for quantifying when two shapes are similar.
 Sadly, in high-dimensions, it is rather expensive to compute.
